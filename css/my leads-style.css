@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  background-color: #f9f8f6;
+  font-family: "Roboto", sans-serif !important;
+}
+body {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
+  background-color: #358779;
+}
+header nav .logo {
+  width: 120px;
+}
+header nav .toggleBtn {
+  padding: 0.5rem 1rem;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+header nav .toggleBtn i {
+  color: white;
+}
+header nav .navbar-collapse .navbar-nav {
+  margin-left: 5rem;
+}
+header nav .navbar-collapse .navbar-nav li {
+  margin: 0 0.2rem;
+}
+header nav .navbar-collapse .navbar-nav li .navLink {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+header nav .navbar-collapse .navbar-nav li .navLink:hover,
+header nav .navbar-collapse .navbar-nav li .navLink.active {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+header nav .avatarBtn {
+  padding: 0;
+}
+header nav .avatarBtn img {
+  width: 50px;
+  margin-left: 0.4rem;
+}
+header nav .navbarRight .navbarRightText {
+  color: rgba(255, 255, 255, 0.9);
+}
+main {
+  padding-top: 5rem;
+}
+main .card,
+main .goldBgColor {
+  margin-bottom: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(0 0 0 / 8%);
+  background-color: white;
+}
+main .card {
+  border: 0;
+  overflow: hidden;
+  padding: 0.8rem;
+}
+main .card .cardTextTop {
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 0.7rem;
+}
+main .card .cardTextTop span {
+  font-weight: 600;
+}
+main .card .creditsBtn {
+  border-radius: 20px;
+  background-color: #358779;
+  color: white;
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: 100%;
+}
+main .card .contact .contactText {
+  text-align: center;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  color: black;
+}
+main .card .contact .contactPerson {
+  display: flex;
+}
+main .card .contact .contactPerson img {
+  width: 50px;
+  margin-right: 0.7rem;
+}
+main .card .contact .fontSmall {
+  font-size: 15px;
+  line-height: 20px;
+}
+main .card .contact .textColor {
+  color: #358779;
+}
+main .goldBgColor {
+  background-color: #cbab60;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+}
+main .goldBgColor h6 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+main .goldBgColor h6 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+main .goldBgColor p {
+  font-size: 0.9rem;
+}
+main .card .financeLogo {
+  width: 125px;
+  margin-bottom: 0.7rem;
+}
+main .card .cardText {
+  line-height: 20px;
+  font-size: 15px;
+}
+main .card .textBottom {
+  text-decoration: none;
+  margin-top: 0.7rem;
+  display: inline-block;
+  color: #476ed3;
+}
+.mijnLeads,
+.logboek {
+  padding: 1.4rem 1rem 0 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 3px rgb(0 0 0 / 8%);
+}
+.leadsHeading,
+.logboekHeading,
+.logboekText {
+  color: #4c5157;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.01rem;
+}
+.logboekHeading {
+  font-size: 2rem;
+}
+.logboekText {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+.tableHeading {
+  color: #358779;
+}
+main .newText {
+  font-size: 0.9rem;
+  border-radius: 25px;
+  color: white;
+  background-color: #d4374c;
+  padding: 0.2rem 0.7rem;
+}
+main .tableBtn {
+  color: white !important;
+  background-color: #358779;
+  width: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  transition: all 0.3s ease-in-out;
+}
+main .tableBtn:hover {
+  background-color: #4ca597;
+}
+main .textColor {
+  color: #358779;
+}
+.modalHeader {
+  border-bottom: 0;
+}
+.modalContent {
+  border: 0;
+}
+.modalTitle {
+  color: #358779;
+  font-size: 1.5rem;
+}
+.modalBodyTopText {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.alertBox {
+  color: white;
+  background-color: #fe7f16;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+.alertBox .faCircleExclamation {
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+.loremBox {
+  background-color: #f9f9f9;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  padding: 1rem;
+}
+.loremBox p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+.loremBox .mb {
+  margin-bottom: 1.2rem;
+}
+.textareaBox {
+  margin-top: 1.8rem;
+}
+.modal .formSwitch {
+  padding-left: 0;
+}
+.modal .formSwitch .formCheckInput:checked {
+  background-color: #358779;
+}
+.modal .formSwitch .formCheckInput {
+  margin-left: 0;
+  margin-top: 0 !important;
+  width: 3.8rem;
+  height: 30px;
+  border: 1px solid #f9f8f6;
+  background-image: url(../img/download.svg);
+  background-color: #cdcdcd;
+}
+.modalBtn {
+  background-color: #358779;
+  color: white !important;
+  padding: 0.575rem 1rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  width: 100%;
+}
+.logboekBtn {
+  background-color: #358779;
+  color: white !important;
+  margin: 2rem 0 1rem 0;
+}
+@media (max-width: 678px) {
+  main {
+    padding-top: 9rem;
+  }
+}
+@media (max-width: 992px) {
+  header nav .navbar-collapse .navbar-nav {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .modalDialog {
+    max-width: 700px;
+  }
+}

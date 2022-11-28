@@ -1,0 +1,276 @@
+body {
+  font-family: sans-serif;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+.btn:focus,
+.form-control:focus,
+button:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+/* NAVBAR */
+header nav {
+  padding: 0;
+  background-color: #358779;
+}
+header nav .navbarToggler {
+  border: 0;
+}
+header nav .navbarToggler i {
+  margin-right: 0.4em;
+}
+header nav .navbarToggler span {
+  font-size: 0.8em;
+  color: #1c62d3;
+  font-weight: 700;
+}
+header nav .headerLogo {
+  width: 250px;
+}
+header nav .navbarCollapse .navbarNav li {
+  margin: 0 0.5em;
+}
+header nav .navbarCollapse .navbarNav .navLink,
+header nav .navbarCollapse .navbarNav .envelope {
+  color: #edf8f6 !important;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  position: relative;
+  transition: all 0.3s ease;
+}
+header nav .navbarCollapse .navbarNav .navLink {
+  color: #edf8f6 !important;
+  text-transform: uppercase;
+  font-size: 0.819em;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+header nav .navbarCollapse .navbarNav .navLink:hover,
+header nav .navbarCollapse .navbarNav .envelope:hover {
+  color: #daf1ed !important;
+}
+header nav .navbarCollapse .navbarNav .envelope i:hover {
+  transform: scale(1.1);
+}
+header nav .navbarCollapse .navbarNav .navLink::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #b5e3dc;
+  transition: all 0.3s ease;
+}
+header nav .navbarCollapse .navbarNav .navLink:hover:before {
+  width: 100%;
+}
+header nav .navbarCollapse .navbarNav .envelope {
+  margin-left: 0.5em;
+  font-size: 1.1em;
+}
+/* HERO SECTION */
+#heroSection,
+#section3,
+#formSection {
+  padding: 4em 0;
+  background-color: #399384;
+}
+#heroSection .topLgText {
+  font-size: 2.9em;
+  font-weight: 700;
+  margin-right: 2.9em;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #edf8f6;
+}
+#heroSection .marginTop {
+  margin-top: 1rem;
+}
+#heroSection p {
+  font-size: 1.1em;
+  color: #daf1ed;
+  letter-spacing: 0.4px;
+  line-height: 1.8;
+}
+#heroSection .lgBtn {
+  color: #edf8f6;
+  background-color: #47b8a5;
+  padding: 0.39em 1.575em 0.39em 1.575em;
+  font-size: 1.37em;
+  line-height: 1.1;
+  letter-spacing: 0.4px;
+  border-radius: 35px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+#heroSection .lgBtn:hover {
+  box-shadow: 0px 0px 6px #5abfae;
+  transform: translateY(-2px);
+}
+#heroSection .heroImg {
+  height: 100%;
+  object-fit: contain;
+}
+/* SECTION 2 */
+#section2 {
+  padding: 2em 0;
+}
+#section2 h5,
+#section2 h6 {
+  color: #47b8a5;
+  font-weight: 700;
+  line-height: 1.1;
+}
+#section2 h5 {
+  font-size: 1.4em;
+}
+#section2 h6 {
+  font-size: 1.2em;
+}
+#section2 .mb {
+  margin-bottom: 1.6em;
+}
+#section2 .my {
+  margin: 1em 0 1.9em 0;
+}
+#section2 .middleText {
+  margin: 1.9em 0;
+}
+#section2 ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+#section2 .listColor ul li {
+  color: #2a6f65;
+  line-height: 2;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+#section2 .textCenter {
+  text-align: center;
+  margin: 3.3em 0 0 0;
+}
+/* SECTION 3 */
+#section3 {
+  text-align: center;
+}
+#section3 .step h6 {
+  color: #edf8f6;
+  margin-top: 0.5em;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+#section3 .step p {
+  color: #daf1ed;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 1.4em;
+}
+/* FORM SECTION */
+#formSection {
+  padding: 2rem 0 !important;
+}
+#formSection form .boldText {
+  color: #edf8f6;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #edf8f6;
+}
+#formSection form input,
+#formSection form select,
+#formSection form textarea {
+  border-color: #c8eae5;
+  background-color: #c8eae5 !important;
+}
+#formSection form input,
+#formSection form textarea {
+  margin-bottom: 1rem;
+}
+#formSection form .formPadding {
+  padding: 1.6rem 0;
+}
+#formSection form label {
+  color: #edf8f6;
+}
+#formSection form label,
+#formSection form .colFormLabel {
+  margin-bottom: 0.3rem;
+}
+#formSection form .colFormLabel {
+  padding-bottom: 0;
+}
+#formSection .saveBtn {
+  color: #edf8f6;
+  border-radius: 6px;
+  border-color: #edf8f6;
+  border-width: 2px;
+  margin-top: 0.5rem;
+}
+/* FOOTER */
+footer {
+  padding: 0.5em 0;
+  text-align: center;
+  background-color: #358779;
+}
+footer .footerCopyRight {
+  padding: 1em 0;
+}
+footer .footerCopyRight a {
+  color: #edf8f6;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 0.5em;
+  margin-bottom: 1.4em;
+  transition: all 0.3s ease;
+}
+footer .footerCopyRight a:hover {
+  color: #6bc7b9;
+}
+footer .footerCopyRight p,
+footer .footerCopyRight a {
+  letter-spacing: 1px;
+  font-size: 0.7em;
+}
+footer .footerCopyRight p {
+  color: #daf1ed;
+}
+@media (max-width: 992px) {
+  #section2 .pt {
+    padding-top: 2em;
+  }
+}
+@media (max-width: 768px) {
+  #heroSection .topLgText {
+    font-size: 1.9em;
+    line-height: 1.2;
+  }
+  header nav .headerLogo {
+    width: 230px;
+  }
+  #heroSection .lgBtn {
+    font-size: 1.25em;
+  }
+  #heroSection .heroImg {
+    margin-top: 1em;
+  }
+  #section2 .mx {
+    margin: 0 1em;
+  }
+}

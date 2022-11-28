@@ -1,0 +1,138 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  font-size: 1em;
+}
+.leaderHead {
+  display: flex;
+  justify-content: space-between;
+}
+.leadHeader {
+  padding: 3em 0;
+}
+.innerLeadHead {
+  display: flex;
+}
+.mainHeading {
+  font-size: 1.5em;
+  color: black;
+  font-weight: 800;
+  margin-bottom: 0.4em;
+}
+.leftSide {
+  margin-right: 3em;
+}
+.rightSIde {
+  margin-top: 2.2em;
+}
+.headLogo {
+  border-radius: 0.4em;
+}
+.blackText {
+  color: #00000090;
+  font-size: 1.2em;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.lightText {
+  font-size: 1.2em;
+  line-height: 1.2;
+  color: #00000040;
+  font-weight: 500;
+}
+.leadBody {
+  padding: 3em 0;
+}
+.leadBody .phoneText {
+  font-size: 2em;
+  font-weight: 600;
+  color: #358779;
+}
+.leadBody .phoneText i {
+  font-size: 2.2em;
+  vertical-align: middle;
+  margin-right: 0.2em;
+  border-radius: 50%;
+}
+.grayText {
+  font-size: 1.2em;
+  color: gray;
+  font-weight: 500;
+  margin-top: 1em;
+}
+.grayText.bottomText {
+  margin-top: 3em;
+}
+.leadHeading {
+  font-size: 3em;
+  font-weight: 600;
+  color: gray;
+  margin-bottom: 0.3em;
+}
+.leadDetails .darkText {
+  color: #00000090;
+  font-size: 1.2em;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.leadDetails .lightText {
+  font-size: 1.2em;
+  line-height: 1.2;
+  color: #00000040;
+  font-weight: 600;
+  width: 50%;
+}
+.leadDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.3em;
+}
+.detailsBody {
+  border-left: 3px solid #358779;
+  padding: 1em;
+}
+.leadBody .table thead th {
+  border-bottom: 3px solid #358779;
+  border-top: 0 !important;
+  color: #358779;
+  font-size: 1.3em;
+}
+.leadBody .table tbody td {
+  border-top: 0 !important;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.mainText {
+  font-size: 1.2em;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 1.4em;
+}
+.mainText.oddText {
+  margin-bottom: 0;
+}
+@media print {
+  .leadHeader,
+  .leadBody {
+    padding: 1em 0;
+  }
+  .leadDetails {
+    margin-bottom: 0.4em;
+  }
+  .mainText {
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    line-height: 1.1;
+  }
+  .leadBody .phoneText {
+    font-size: 1.2em;
+  }
+  .headLogo {
+    height: 60px;
+  }
+  .leadHeading {
+    font-size: 2em;
+  }
+}

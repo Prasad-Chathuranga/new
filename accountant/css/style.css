@@ -1,0 +1,785 @@
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "TahomaRegular";
+  src: url("../fonts/TahomaRegular.ttf");
+}
+@font-face {
+  font-family: "YandexSansText";
+  src: url("../fonts/YandexSansText.ttf");
+}
+@font-face {
+  font-family: "GT-Super-Display";
+  src: url("../fonts/GT-Super-Display.ttf");
+}
+body {
+  font-size: 1em;
+  font-family: "tahoma";
+}
+.CartPicture{
+  width: 40px;
+  height: 40px;
+}
+
+/* Page Contents */
+.pageContents {
+  display: flex;
+}
+
+/* Side Menu */
+.sideMenu {
+  width: 150px;
+  padding: 2em 1em;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sideMenu .sideMenuLink {
+  display: block;
+  color: black;
+  text-align: center;
+  margin-bottom: 1.3em;
+  padding: 0.1em 0;
+  border-radius: 1em;
+  text-decoration: none;
+  transition: 200ms ease-in-out;
+}
+.sideMenu .sideMenuLinks {
+  padding: 0 1.3em;
+  margin-top: 3em;
+}
+.sideMenu .sideMenuLink i {
+  font-size: 1.7em;
+}
+.sideMenu .sideMenuLink div {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.sideMenu .brandLogo {
+  display: block;
+  text-align: center;
+  color: #00b068;
+  line-height: 1.2;
+  font-size: 1.7em;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.sideMenu .brandLogo div {
+  font-size: 0.6em;
+  color: black;
+  letter-spacing: 0;
+}
+.sideMenu .sideMenuLink.active,
+.sideMenu .sideMenuLink:hover {
+  background-color: #efefef;
+}
+
+/* Body Contents */
+.bodyContents {
+  width: calc(100% - 150px);
+  padding: 1.5em 3em 1.5em 1em;
+  margin-left: auto;
+}
+.bodyContents .searchArea input {
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid transparent;
+  outline: none;
+  transition: 200ms ease-in-out;
+  padding: 0.7em 0.5em 0.7em 4.5em;
+  border-radius: 30px;
+}
+.bodyContents .searchArea {
+  position: relative;
+}
+.bodyContents .searchArea input::placeholder {
+  color: #d7d7d7;
+}
+.bodyContents .searchArea i {
+  color: #d7d7d7;
+  position: absolute;
+  left: 27px;
+  top: 17px;
+}
+.bodyContents .searchArea input:focus {
+  border-color: #1c9263;
+}
+.bodyContents .headerLink {
+  display: inline-block;
+  color: #222529;
+  font-size: 0.9em;
+  text-decoration: none;
+  font-weight: 600;
+}
+.mainBtn {
+  display: inline-block;
+  font-family: "YandexSansText";
+  padding: 0.3em 1.1em;
+  border-radius: 30px;
+  font-size: 0.9em;
+  transition: 200ms ease-in-out;
+}
+.bodyContents .pageHeader .mainBtn {
+  background-color: #1c9263;
+  color: white;
+  margin-left: 1.3em;
+}
+.bodyContents .pageHeader .hideLogo {
+  display: none;
+  text-decoration: none;
+}
+.bodyContents .pageHeader .row {
+  align-items: center;
+}
+.mainBtn:hover {
+  transform: translate3d(0, -3px, 0);
+  opacity: 0.8;
+  text-decoration: none;
+}
+.mainHeading {
+  color: white;
+  font-family: "GT-Super-Display";
+}
+.bodyContents .greenCarousel {
+  background: linear-gradient(180deg, #009056, #00b068);
+  padding: 1em 3em;
+  border-radius: 0.7em;
+  margin-top: 3em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.bodyContents .greenCarousel .mainHeading {
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.whiteText {
+  color: white;
+}
+.bodyContents .greenCarousel .price {
+  display: inline-block;
+  background-color: #97db2e;
+  color: white;
+  padding: 0em 0.8em;
+  font-size: 0.9em;
+  border-radius: 30px;
+  margin-left: 0.2em;
+}
+.bodyContents .greenCarousel .mainBtn {
+  color: white;
+  border: 2px solid white;
+  font-size: 0.7em;
+  font-weight: 600;
+  padding: 0.3em 1.5em;
+  margin-top: 1em;
+}
+.bodyContents .greenCarousel .carouselImg {
+  height: 130px;
+}
+.bodyContents .greenCarousel .carouselImg.smImg {
+  height: 80px;
+}
+.bodyContents .greenCarousel .carouselImg.oddImg {
+  margin-right: -2.1em;
+  position: relative;
+  z-index: 1;
+}
+.commonCarousel .owl-next {
+  display: none !important;
+}
+.bodyContents .owl-carousel .owl-next span {
+  position: absolute;
+  font-size: 2.5em;
+  right: 10px;
+  top: 66px;
+  height: 32px;
+  width: 32px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  color: #158f5e !important;
+  text-align: center;
+  line-height: 0.7;
+}
+.bodyContents .owl-carousel .owl-item img {
+  display: unset;
+  width: unset;
+}
+.bodyContents .owl-carousel .owl-prev {
+  display: none;
+}
+.bodyContents .owl-theme .owl-nav {
+  margin-top: -25px;
+}
+.grayText {
+  color: #9f9f9f;
+  font-size: 0.9em;
+  margin-bottom: 0.3em;
+}
+.subHeading {
+  color: black;
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+.bodyContents .options .optionCard {
+  border-radius: 1em;
+  padding: 2em;
+  background-position: center;
+  background-blend-mode: multiply;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  display: block;
+  text-decoration: none;
+}
+.bodyContents .options .optionCard:hover {
+  background-blend-mode: unset;
+}
+.bodyContents .options .optionCard .whiteText {
+  line-height: 1;
+  font-size: 0.9em;
+}
+.bodyContents .options .optionCard .mainHeading {
+  font-size: 1.2em;
+}
+.bodyContents .options .optionCard.helpCard {
+  background-image: url("../img/bg-img1.png");
+  background-color: #35d578;
+}
+.bodyContents .options .optionCard.sponserCard {
+  background-image: url("../img/bg-img2.png");
+  background-color: #b2df6c;
+}
+.bodyContents .options .optionCard.becomeCard {
+  background-image: url("../img/bg-img3.png");
+  background-color: #71f4bf;
+}
+.bodyContents .options .optionCard.organizationCard {
+  background-image: url("../img/bg-img4.png");
+  background-color: #62ddac;
+}
+.bodyContents .options .optionCard.exploreCard {
+  background-image: url("../img/bg-img5.png");
+  background-color: #4f9d7e;
+}
+.greenLink {
+  display: inline-block;
+  text-decoration: none !important;
+  color: #1a885d;
+  font-size: 0.9em;
+}
+
+/* Plant Carousel */
+#plantCarousel .owl-nav {
+  display: block !important;
+}
+#plantCarousel .owl-next span {
+  right: -15px;
+  top: 95px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+}
+#plantCarouselTwo .owl-nav {
+  display: block !important;
+}
+#plantCarouselTwo .owl-next span {
+  right: -15px;
+  top: 95px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+}
+#plantCarousel .whiteText {
+  color: black;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-left: 0.8em;
+}
+#plantCarouselTwo .whiteText {
+  color: black;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-left: 0.8em;
+}
+#plantCarousel .plantPrice {
+  color: #a7cf5a;
+  margin-top: 0.1em;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-left: 0.8em;
+}
+#plantCarouselTwo .plantPrice {
+  color: #a7cf5a;
+  margin-top: 0.1em;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-left: 0.8em;
+}
+#plantCarousel .plantTotals {
+  font-size: 0.9em;
+  color: #009056;
+  margin-left: 0.8em;
+  font-weight: 600;
+}
+.brandName {
+  font-size: 3em;
+  font-weight: 600;
+  color: brown;
+  font-style: italic;
+  text-align: center;
+  font-family: "Fredoka One";
+}
+.brandLogo {
+  height: 90px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+.topHeader {
+  position: relative;
+}
+#plantCarouselTwo .plantTotals {
+  font-size: 0.9em;
+  color: #009056;
+  margin-left: 0.8em;
+  font-weight: 600;
+}
+#plantCarousel .plantTotals span {
+  color: black;
+  margin-left: 0.6em;
+}
+#plantCarouselTwo .plantTotals span {
+  color: black;
+  margin-left: 0.6em;
+}
+#plantCarousel .item:hover .plantImage {
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+}
+#plantCarouselTwo .item:hover .plantImage {
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+}
+#plantCarousel .item .plantImage {
+  transition: 200ms ease-in-out;
+}
+
+/* Green Card Carousel */
+#greenCardCarousel .greenCard {
+  background-color: #158f5e;
+  border-radius: 1em;
+  padding: 2em 2.3em;
+  position: relative;
+  transition: 200ms ease-in-out;
+}
+#greenCardCarousel .greenCard:hover {
+  opacity: 0.8;
+}
+#greenCardCarousel .greenCard .playIcon {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  font-size: 1.3em;
+  display: inline-block;
+  text-decoration: none;
+}
+#greenCardCarousel .owl-next span {
+  right: 0;
+  top: 0;
+}
+#greenCardCarousel .greenCard .whiteText {
+  font-size: 0.9em;
+}
+#greenCardCarousel .greenCard .mainHeading {
+  font-size: 1.2em;
+}
+/* Form Section */
+.form-section {
+  padding: 1em 0;
+  min-height: 100vh;
+  text-align: center;
+}
+.form-section .common-input {
+  width: 100%;
+  border: 1px solid #009056;
+  padding: 0.4em 1em;
+  outline: none;
+  box-shadow: none;
+  margin-bottom: 1em;
+}
+.form-section .common-input::placeholder {
+  color: black;
+}
+.form-section textarea.common-input {
+  resize: none;
+}
+.form-section .main-btn {
+  background-color: #009056;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+}
+.form-section .mainHeading {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: black;
+  display: inline-block;
+  border-bottom: 5px solid #00b068;
+}
+/* Footer */
+.main-footer {
+  background-color: #009056;
+  padding: 2.5em 0;
+  color: white;
+  border-radius: 0.5em;
+}
+.main-footer .footer-text {
+  font-size: 0.8em;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-top: 0.8em;
+}
+.main-footer .footer-heading {
+  font-weight: 600;
+}
+.main-footer .social-link img {
+  height: 35px;
+}
+.main-footer .social-link {
+  text-decoration: none;
+  margin-left: 0.5em;
+}
+
+/* Options Carousel */
+#optionsCarousel.owl-carousel .owl-next span {
+  right: -2px;
+  top: -52px;
+  box-shadow: 0 5px 4px rgb(0 0 0 / 10%);
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  display: none;
+  align-items: center;
+  width: 100%;
+  padding: 2em 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+}
+.mobileMenu .mobileMenuLink {
+  color: black;
+  width: 18%;
+  text-decoration: none;
+  text-align: center;
+  height: 45px;
+  padding: 0.1em 0;
+  display: block;
+  border-radius: 0.6em;
+  margin-left: 1em;
+}
+.mobileMenu .mobileMenuLink.active {
+  background-color: #efefef;
+}
+.mobileMenu .mobileMenuLink div {
+  font-size: 0.8em;
+}
+
+/* Explore Page */
+.commonContents {
+  margin-top: 5em;
+}
+.explore .mainHeading {
+  color: black;
+  font-size: 2em;
+}
+.grayBox {
+  background-color: #f8f8f8;
+  border-radius: 0.8em;
+  padding: 1em 1.5em;
+  margin-bottom: 0.8em;
+}
+.grayBox .mainHeading {
+  font-size: 1em;
+  margin-bottom: 0.3em;
+}
+.grayBox .grayText {
+  line-height: 1.2;
+}
+.grayBox .greenBtn {
+  display: inline-block;
+  background-color: #68edbb;
+  padding: 0.6em 0;
+  border-radius: 30px;
+  color: white;
+  width: 160px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9em;
+  font-family: "YandexSansText";
+  margin-right: 0.7em;
+  transition: 200ms ease-in-out;
+}
+.grayBox .greenBtn:hover {
+  background-color: #2dad80;
+}
+.grayBox .donateContents .donateInput {
+  border: none;
+  outline: none;
+  padding: 0.7em 2em;
+  border-radius: 30px;
+  font-size: 0.9em;
+  width: 100%;
+  margin-left: 1em;
+  max-width: 370px;
+}
+.grayBox .donateContents .donateInput::placeholder {
+  text-align: center;
+}
+.grayBox .payOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+.grayBox .payOptions .greenBtn {
+  width: 220px;
+  background-color: black;
+}
+.grayBox .payOptions .payOptionsImage {
+  margin-right: 1em;
+}
+.grayBox .donorsContents .donarImage {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 1.4em;
+}
+.grayBox .donorsContents .donarName {
+  font-weight: 600;
+  color: black;
+}
+.grayBox .donorsContents .donarComment {
+  font-size: 0.9em;
+  color: black;
+}
+.grayBox .donorsContents .donorsDetails {
+  display: flex;
+  align-items: center;
+}
+.grayBox .donorsContents .greenBtn {
+  width: 105px;
+  padding: 0.5em 0;
+  background-color: #20d692;
+}
+.grayBox .donorsContents .dateTime {
+  color: #9f9f9f;
+  font-size: 0.8em;
+  margin-top: 0.3em;
+}
+.grayBox .donorsContents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.3em;
+}
+.grayBox .donorsContents .orderSide {
+  text-align: right;
+}
+
+/* About Section */
+.aboutSection {
+  background-image: url("../img/about-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
+  border-radius: 1em;
+  padding: 3em 0;
+  text-align: center;
+  margin: 3em 0;
+}
+.aboutSection .mainHeading {
+  font-size: 2.6em;
+  margin-bottom: 1em;
+  display: inline-block;
+  border-bottom: 5px solid #00b068;
+}
+.aboutSection .mainText {
+  color: white;
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+
+/* Order Modal */
+.orderModal .mainHeading {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .sideMenu {
+    display: none;
+  }
+  .bodyContents {
+    width: 100%;
+  }
+  #greenCarouselOne .dashImage {
+    display: none;
+  }
+  .bodyContents {
+    padding: 1em 1em 5em 1em;
+  }
+  .bodyContents .options .optionCard {
+    background-size: 110%;
+  }
+  #plantCarousel {
+    margin-top: 1em;
+  }
+  .pageFooter .footerLogo {
+    text-align: center;
+  }
+  .pageFooter .footerLink {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  .pageFooter .copyText {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+  }
+  .bodyContents .searchArea {
+    display: none;
+  }
+  .bodyContents .pageHeader .hideLogo {
+    display: block;
+  }
+  .bodyContents .pageHeader .hideLogo img {
+    height: 60px;
+  }
+  .bodyContents .pageHeader .mainBtn {
+    margin-left: 0.2em;
+  }
+  .bodyContents .greenCarousel {
+    padding: 1em 0.5em 1em 2em;
+    margin-top: 2em;
+  }
+  .bodyContents .greenCarousel .mainHeading {
+    font-size: 1em;
+  }
+  .bodyContents .greenCarousel .carouselImg {
+    height: 65px;
+  }
+  .bodyContents .greenCarousel .carouselImg.smImg {
+    height: 40px;
+    margin-right: -0.8em;
+    margin-top: -1.7em;
+    position: relative;
+  }
+  .bodyContents .greenCarousel .carouselImg.oddImg {
+    position: unset;
+    margin-top: 0.5em;
+  }
+  #greenCarouselOne .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+  }
+  #greenCarouselOne .owl-dots .owl-dot span {
+    height: 7px;
+    width: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+  }
+  #greenCarouselOne .owl-dots .owl-dot.active span {
+    background-color: #35d578;
+  }
+  #plantCarousel .owl-next span {
+    top: 60px;
+    right: 0;
+  }
+  #greenCardCarousel .greenCard {
+    padding: 2em 1.5em;
+  }
+  #greenCardCarousel .greenCard .mainHeading {
+    font-size: 1.1em;
+  }
+  #greenCardCarousel .owl-next span {
+    right: 0;
+    top: 37px;
+  }
+  .pageFooter {
+    display: none;
+  }
+  .bodyContents .options .optionCard {
+    padding: 1.2em 1em;
+  }
+  .bodyContents .options .optionCard .mainHeading {
+    font-size: 1em;
+  }
+  .subHeading {
+    font-size: 1.1em;
+  }
+  .mobileMenu {
+    display: flex;
+  }
+
+  /* Explore Page */
+  .grayBox .donateContents .greenBtn {
+    margin-bottom: 1.5em;
+  }
+  .grayBox .donateContents {
+    text-align: center;
+  }
+  .grayBox .payOptions {
+    display: block;
+    margin-top: 2em;
+    text-align: center;
+  }
+  .grayBox .payOptions .payOptionsImage {
+    margin-bottom: 1em;
+  }
+  .grayBox .donateContents .donateInput {
+    margin-left: 0;
+  }
+  .grayBox .donorsContents {
+    display: block;
+  }
+  .grayBox .donorsContents .orderSide {
+    margin-top: 1.5em;
+  }
+  .starCard {
+    margin-bottom: 2em;
+  }
+  .dashCard {
+    padding: 3em 0;
+  }
+  .commonContents {
+    margin-top: 2em;
+  }
+  .starCard .mainBtn {
+    display: block;
+    margin: auto;
+  }
+  .starCard .mainBtn.blackBtn {
+    margin: 1em auto;
+  }
+}

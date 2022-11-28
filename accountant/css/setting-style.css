@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  background-color: #f9f8f6;
+  font-family: "Roboto", sans-serif !important;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus,
+.form-range:focus,
+.form-check-input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
+  background-color: #358779;
+}
+header nav .logo {
+  width: 120px;
+}
+header nav .toggleBtn {
+  padding: 0.5rem 1rem;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+header nav .toggleBtn i {
+  color: white;
+}
+header nav .navbar-collapse .navbar-nav {
+  margin-left: 5rem;
+}
+header nav .navbar-collapse .navbar-nav li {
+  margin: 0 0.2rem;
+}
+header nav .navbar-collapse .navbar-nav li .navLink {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+header nav .navbar-collapse .navbar-nav li .navLink:hover,
+header nav .navbar-collapse .navbar-nav li .navLink.active {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+header nav .avatarBtn {
+  padding: 0;
+  border: 0;
+}
+/* ============================================= */
+header nav .dropdownMenu {
+  border: 0;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  top: 95% !important;
+  left: 10% !important;
+}
+header nav .dropdownMenu .dropdownItem {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-size: 17px;
+}
+/* ============================================= */
+header nav .avatarBtn img {
+  width: 50px;
+  margin-left: 0.4rem;
+}
+header nav .navbarRight .navbarRightText {
+  color: rgba(255, 255, 255, 0.9);
+}
+main {
+  padding-top: 5rem;
+}
+main .settings {
+  padding: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+  min-height: 100vh;
+}
+main .settings .settingsHeading h2 {
+  color: #4c5157;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.01rem;
+}
+main .settings label {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+main .settings .inputBox {
+  color: white;
+  background-color: #17a2b8;
+  padding-top: 0.499rem;
+  padding-bottom: 0.499rem;
+  margin-bottom: 2rem;
+}
+main .settings .formRange {
+  display: flex;
+  align-items: center;
+}
+main .settings .formSwitch {
+  padding-left: 0;
+}
+main .settings .formSwitch .formCheckInput {
+  margin-left: 0;
+  margin-top: 0 !important;
+  width: 4.4rem;
+  height: 34px;
+  border: 1px solid #358779;
+}
+main .settings .formSwitch .formCheckInput:checked {
+  background-color: #358779;
+}
+main .settings .settingBtn {
+  background-color: #358779;
+  color: white;
+  border-color: #358779;
+  letter-spacing: 0.01rem;
+  padding: 0.8rem 1.2rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+main .settings .settingBtn:hover {
+  background-color: #41a393;
+  border-color: #41a393;
+}
+main .settings .rightInput input {
+  color: #358779;
+  padding-top: 0.499rem;
+  padding-bottom: 0.499rem;
+  margin-bottom: 2rem;
+  font-size: 17px;
+}
+
+.divRange {
+  display: flex;
+  align-items: center;
+}
+.divRange output {
+  margin-left: 2em;
+}
+.show-tick {
+  width: 100% !important;
+  margin-top: 0.2em;
+  margin-bottom: 2em;
+}
+.bs-placeholder {
+  color: #358779 !important;
+  font-weight: 500 !important;
+  background-color: white !important;
+  border: 1px solid #17a2b8 !important;
+  padding: 0.7em 1em !important;
+}
+main .settings .rightInput input::placeholder {
+  color: #358779;
+}
+@media (max-width: 678px) {
+  main {
+    padding-top: 9rem;
+  }
+}

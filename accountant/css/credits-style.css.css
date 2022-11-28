@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  background-color: #f9f8f6;
+  font-family: "Roboto", sans-serif !important;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
+  background-color: #358779;
+}
+header nav .logo {
+  width: 120px;
+}
+header nav .toggleBtn {
+  padding: 0.5rem 1rem;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+header nav .toggleBtn i {
+  color: white;
+}
+header nav .navbar-collapse .navbar-nav {
+  margin-left: 5rem;
+}
+header nav .navbar-collapse .navbar-nav li {
+  margin: 0 0.2rem;
+}
+header nav .navbar-collapse .navbar-nav li .navLink {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+header nav .navbar-collapse .navbar-nav li .navLink:hover,
+header nav .navbar-collapse .navbar-nav li .navLink.active {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+header nav .avatarBtn {
+  padding: 0;
+}
+header nav .avatarBtn img {
+  width: 50px;
+  margin-left: 0.4rem;
+}
+header nav .navbarRight .navbarRightText {
+  color: rgba(255, 255, 255, 0.9);
+}
+main {
+  padding-top: 5rem;
+}
+main .packages {
+  padding: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+}
+main .packages .creditsHeading h2 {
+  color: #4c5157;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.01rem;
+}
+main .packages .packagesCredits {
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid #eeeeee;
+  max-width: 320px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  margin-bottom: 4rem;
+}
+main .packages .packagesCredits .packagesCreditsText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+main .packages .packagesCredits img {
+  width: 30px;
+  margin-right: 0.4rem;
+}
+main .packages .packagesCreditsText h4 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #4c5157;
+}
+main .table tbody tr td,
+main .table thead tr th {
+  padding: 0.8rem 0.5rem;
+}
+main .table thead tr th {
+  color: #358779;
+}
+main .table tbody {
+  border-top-color: #358779 !important;
+}
+@media (max-width: 992px) {
+  header nav .navbar-collapse .navbar-nav {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  main .card .cardTextTop {
+    font-size: 17px;
+  }
+}
+@media (max-width: 678px) {
+  main {
+    padding-top: 9rem;
+  }
+}

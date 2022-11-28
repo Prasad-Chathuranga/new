@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  background-color: #f9f8f6;
+  font-family: "Roboto", sans-serif !important;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
+  background-color: #358779;
+}
+header nav .logo {
+  width: 120px;
+}
+header nav .toggleBtn {
+  padding: 0.5rem 1rem;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+header nav .toggleBtn i {
+  color: white;
+}
+header nav .navbar-collapse .navbar-nav {
+  margin-left: 5rem;
+}
+header nav .navbar-collapse .navbar-nav li {
+  margin: 0 0.2rem;
+}
+header nav .navbar-collapse .navbar-nav li .navLink {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+header nav .navbar-collapse .navbar-nav li .navLink:hover,
+header nav .navbar-collapse .navbar-nav li .navLink.active {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+header nav .avatarBtn {
+  padding: 0;
+}
+header nav .avatarBtn img {
+  width: 50px;
+  margin-left: 0.4rem;
+}
+header nav .navbarRight .navbarRightText {
+  color: rgba(255, 255, 255, 0.9);
+}
+main {
+  padding-top: 5rem;
+}
+main .invoices {
+  padding: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+}
+main .invoices .invoicesHeading h2 {
+  color: #4c5157;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.01rem;
+}
+main .table {
+  margin-bottom: 0;
+}
+main .table .tableHeading {
+  color: #358779;
+}
+main .table tbody {
+  border-top-color: #358779 !important;
+}
+main .table th,
+main .table td {
+  padding: 0.7rem 0.5rem;
+}
+main .table button {
+  padding: 0;
+}
+main .table .pdfButton {
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  background-color: #358779;
+}
+main .table .pdfButton:hover {
+  background-color: #41a393;
+}
+@media (max-width: 678px) {
+  main {
+    padding-top: 9rem;
+  }
+}

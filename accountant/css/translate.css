@@ -1,0 +1,9 @@
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+.goog-te-gadget-icon{
+    display: none;
+}
+body {
+    top: 0px !important; 
+}

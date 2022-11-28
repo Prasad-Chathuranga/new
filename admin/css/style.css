@@ -1,0 +1,132 @@
+body {
+  font-size: 1em;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Dashboar Page */
+
+/* Page Parent */
+.pageParent {
+  display: flex;
+  min-height: 100vh;
+}
+.sideMenu {
+  width: 270px;
+  background-color: #1b2430;
+  position: relative;
+}
+.sideMenu .menuDropdown {
+  width: 100%;
+  text-align: left;
+  padding: 0.8em 2em;
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: 200ms ease-in-out;
+  border-radius: 0;
+}
+.sideMenu .menuDropdown:hover {
+  background-color: #10151c !important;
+}
+.sideMenu .menuDropdown.active {
+  background-color: #10151c !important;
+}
+.sideMenu .sideMenuHeader {
+  background-color: #232f3e;
+  padding: 1em 1.7em;
+  margin-bottom: 0.5em;
+}
+.sideMenu .sideMenuHeader .brand {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  line-height: 1;
+  font-size: 2em;
+  font-weight: 700;
+  color: #00b068;
+}
+.sideMenu .sideMenuHeader .brand div {
+  color: white;
+  font-size: 0.5em;
+}
+.sideMenu .sideMenuLink {
+  color: #eeeeee;
+  display: block;
+  padding: 0.8em 1.8em;
+  text-decoration: none;
+  transition: 200ms ease-in-out;
+}
+.sideMenu .sideMenuLink i {
+  color: #84898f;
+  font-size: 1.2em;
+  width: 45px;
+}
+.sideMenu .sideMenuLink.active,
+.sideMenu .sideMenuLink:hover {
+  background-color: #10151c;
+  color: #84898f;
+}
+
+/* Page Contents */
+.pageContents {
+  width: calc(100% - 270px);
+  padding: 1.4em 1.6em;
+}
+.pageContents .mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pageContents .mainHeader .fa-search {
+  color: #9e9e9e;
+  margin-right: 1em;
+}
+.grayText {
+  color: #9e9e9e;
+}
+.pageContents .mainHeader .iconLink {
+  display: inline-block;
+  text-decoration: none;
+  color: #9e9e9e;
+  font-size: 1.4em;
+  margin-left: 1em;
+  position: relative;
+  transition: 200ms ease-in-out;
+}
+.pageContents .mainHeader .iconLink:hover {
+  color: #1565c0;
+}
+.pageContents .mainHeader .iconLink .notification {
+  background-color: #1565c0;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  font-size: 0.5em;
+  border-radius: 50%;
+  line-height: 1.8;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 10px;
+  top: -5px;
+}
+.mainHeading {
+  color: black;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.pageContents .contentsHeader {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.7em;
+  margin-top: 2em;
+}
+.pageContents .innerContents {
+  margin-top: 3em;
+}
+.mainTable {
+  margin: 3em 0;
+}
+.mainTable .table {
+  width: 100%;
+}

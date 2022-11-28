@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  background-color: #f9f8f6;
+  font-family: "Roboto", sans-serif !important;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
+  background-color: #358779;
+}
+header nav .logo {
+  width: 120px;
+}
+header nav .toggleBtn {
+  padding: 0.5rem 1rem;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+header nav .toggleBtn i {
+  color: white;
+}
+header nav .navbar-collapse .navbar-nav {
+  margin-left: 5rem;
+}
+header nav .navbar-collapse .navbar-nav li {
+  margin: 0 0.2rem;
+}
+header nav .navbar-collapse .navbar-nav li .navLink {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+header nav .navbar-collapse .navbar-nav li .navLink:hover,
+header nav .navbar-collapse .navbar-nav li .navLink.active {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+header nav .avatarBtn {
+  padding: 0;
+  border: 0;
+}
+/* ============================================= */
+header nav .dropdownMenu {
+  border: 0;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  top: 95% !important;
+  left: 10% !important;
+}
+header nav .dropdownMenu .dropdownItem {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-size: 17px;
+}
+/* ============================================= */
+header nav .avatarBtn img {
+  width: 50px;
+  margin-left: 0.4rem;
+}
+header nav .navbarRight .navbarRightText {
+  color: rgba(255, 255, 255, 0.9);
+}
+main {
+  padding-top: 5rem;
+}
+main .card .cardTopBg {
+  background-color: #686865;
+  color: white;
+  text-align: center;
+  padding: 0.4rem 0;
+}
+main .p0 {
+  padding: 0 !important;
+}
+main .card .cardLink ul {
+  padding: 0;
+  margin: 0;
+}
+main .card .cardLink ul li {
+  list-style: none;
+  margin: 0.7rem 1rem;
+}
+main .card .cardLink ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #686865;
+  transition: all 0.3s ease-in-out;
+}
+main .card .cardLink ul li a:hover {
+  color: #358779;
+}
+main .card {
+  border: 0;
+  overflow: hidden;
+  padding: 0.8rem;
+}
+main .card,
+main .box,
+.goldBgColor {
+  margin-bottom: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+main .card .cardTextTop {
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 0.7rem;
+}
+main .goldBgColor {
+  background-color: #cbab60;
+  color: white;
+  text-align: center;
+}
+main .goldBgColor h6 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+main .goldBgColor p {
+  font-size: 0.9rem;
+}
+main .card .financeLogo {
+  width: 125px;
+  margin-bottom: 0.7rem;
+}
+main .card .cardText {
+  line-height: 20px;
+  font-size: 15px;
+}
+main .card .textBottom {
+  text-decoration: none;
+  margin-top: 0.7rem;
+  display: inline-block;
+  color: #476ed3;
+}
+.paddingAll,
+.goldBgColor {
+  padding: 0.8rem;
+}
+main .card .cardTextTop span {
+  font-weight: 600;
+}
+main .card .creditsBtn,
+main .box .orderBtn {
+  border-radius: 20px;
+  background-color: #358779;
+  color: white;
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: 100%;
+}
+main .card .contact .contactText {
+  text-align: center;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  color: black;
+}
+main .card .contact .contactPerson {
+  display: flex;
+}
+main .card .contact .contactPerson img {
+  width: 50px;
+  margin-right: 0.7rem;
+}
+main .card .contact .fontSmall {
+  font-size: 15px;
+  line-height: 20px;
+}
+main .card .contact .textColor {
+  color: #358779;
+}
+.company {
+  padding: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+}
+.companyHeading h2 {
+  color: #4c5157;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.01rem;
+}
+main .company input {
+  border-radius: 0;
+  margin-bottom: 0.4rem;
+  border: 0;
+  color: black;
+}
+main .company .borderBottom {
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+main .company .fontSize {
+  font-size: 0.9rem;
+}
+main .company .modifyBtn,
+.company .updatingBtn {
+  background-color: #358779;
+  margin-top: 1rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+main .company .modifyBtn i {
+  font-size: 0.9rem;
+  margin-right: 0.2rem;
+}
+.company .textRed {
+  color: red;
+}
+.company .formControl,
+.company .formSelect {
+  background-color: rgb(247, 247, 247);
+  padding-top: 0.311rem;
+  padding-bottom: 0.311rem;
+  border-radius: 0.311rem;
+}
+.company .formLabel {
+  margin-bottom: 0.3rem;
+}
+main .company .modifyBtn:hover {
+  transform: translateY(-3px);
+  border-color: #358779;
+}
+@media (max-width: 678px) {
+  main {
+    padding-top: 9rem;
+  }
+}

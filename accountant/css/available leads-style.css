@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  background-color: #f9f8f6;
+  font-family: "Roboto", sans-serif !important;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+button:focus,
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+header nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
+  background-color: #358779;
+}
+header nav .logo {
+  width: 120px;
+}
+header nav .toggleBtn {
+  padding: 0.5rem 1rem;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+header nav .toggleBtn i {
+  color: white;
+}
+header nav .navbar-collapse .navbar-nav {
+  margin-left: 5rem;
+}
+header nav .navbar-collapse .navbar-nav li {
+  margin: 0 0.2rem;
+}
+header nav .navbar-collapse .navbar-nav li .navLink {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+header nav .navbar-collapse .navbar-nav li .navLink:hover,
+header nav .navbar-collapse .navbar-nav li .navLink.active {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+header nav .avatarBtn {
+  padding: 0;
+}
+header nav .avatarBtn img {
+  width: 50px;
+  margin-left: 0.4rem;
+}
+header nav .navbarRight .navbarRightText {
+  color: rgba(255, 255, 255, 0.9);
+}
+main {
+  padding-top: 5rem;
+}
+main .card {
+  border: 0;
+  overflow: hidden;
+  padding: 0.8rem;
+}
+main .card,
+main .box {
+  margin-bottom: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+main .box .boxHeading{
+    color: #358779;
+    font-size: 1.5rem;
+}
+main .card .cardTextTop {
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 0.7rem;
+}
+main .card .cardTextTop span {
+  font-weight: 600;
+}
+main .card .creditsBtn,
+main .box .orderBtn {
+  border-radius: 20px;
+  background-color: #358779;
+  color: white;
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: 100%;
+}
+main .card .contact .contactText {
+  text-align: center;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  color: black;
+}
+main .card .contact .contactPerson {
+  display: flex;
+}
+main .card .contact .contactPerson img {
+  width: 50px;
+  margin-right: 0.7rem;
+}
+main .card .contact .fontSmall {
+  font-size: 15px;
+  line-height: 20px;
+}
+main .card .contact .textColor {
+  color: #358779;
+}
+.p0 {
+  padding: 0 !important;
+}
+.paddingAll {
+  padding: 0.8rem;
+}
+main .card .financeLogo {
+  width: 125px;
+  margin-bottom: 0.7rem;
+}
+main .card .cardText {
+  line-height: 20px;
+  font-size: 15px;
+}
+main .card .textBottom {
+  text-decoration: none;
+  margin-top: 0.7rem;
+  display: inline-block;
+  color: #476ed3;
+}
+main .searchBox {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #e4e4e3, 1px 1px 9px #e4e4e3;
+  background: transparent;
+  padding: 0.5rem 0.8rem;
+  outline: none;
+}
+main .box {
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+main .box h2 {
+  color: #499387;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.01rem;
+}
+main .box p {
+  line-height: 23px;
+}
+main .box h5 {
+  font-weight: 700;
+  color: black;
+  font-size: 1.1rem;
+}
+main .box .para {
+  padding-top: 0.1rem;
+  font-size: 0.9rem;
+}
+main .box .cardBody{
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+main .box .cardBody .hideBtn{
+    background-color: #358779;
+    color: white;
+}
+main .box .view {
+  margin: 1.5rem 0 2rem 0;
+}
+main .box .view a {
+  text-decoration: none;
+  color: #358779;
+  font-weight: 600;
+}
+main .box .orderBtn {
+  width: 38%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+main .box .paddignTop {
+  padding-top: 1rem;
+}
+main .box .paddignTop span {
+  font-weight: 600;
+}
+main .boxBootom {
+  text-align: center;
+  color: rgb(94, 93, 93);
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 992px) {
+  header nav .navbar-collapse .navbar-nav {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  main .card .cardTextTop {
+    font-size: 17px;
+  }
+}
+@media (max-width: 678px) {
+  main {
+    padding-top: 9rem;
+  }
+}
+/*Company Style*/
+main .card .cardTopBg {
+    background-color: #686865;
+    color: white;
+    text-align: center;
+    padding: 0.4rem 0;
+}
+main .card .cardLink ul {
+    padding: 0;
+    margin: 0;
+}
+main .card .cardLink ul li {
+    list-style: none;
+    margin: 0.7rem 1rem;
+}
+main .card .cardLink ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #686865;
+    transition: all 0.3s ease-in-out;
+}
+main .company {
+  padding: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-radius: 5px;
+  background-color: white;
+}
+main .card,
+main .box,
+.goldBgColor {
+  margin-bottom: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+main .goldBgColor h6 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+main .goldBgColor p {
+  font-size: 0.9rem;
+}
+main .card .financeLogo {
+  width: 125px;
+  margin-bottom: 0.7rem;
+}
+main .card .cardText {
+  line-height: 20px;
+  font-size: 15px;
+}
+main .card .textBottom {
+  text-decoration: none;
+  margin-top: 0.7rem;
+  display: inline-block;
+  color: #476ed3;
+}
+.paddingAll,
+.goldBgColor {
+  padding: 0.8rem;
+}
+main .company .companyHeading h2 {
+  color: #4c5157;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.01rem;
+}
+main .company input {
+  border-radius: 0;
+  margin-bottom: 0.4rem;
+  border: 0;
+  color: black;
+}
+main .company .borderBottom {
+  align-items: center;
+  border-bottom: 1px solid #00000020;
+}
+main .company .fontSize {
+  font-size: 0.9rem;
+}
+main .company .modifyBtn {
+  background-color: #358779;
+  margin-top: 1rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+main .company .modifyBtn i {
+  font-size: 0.9rem;
+  margin-right: 0.2rem;
+}
+main .company .modifyBtn:hover {
+  transform: translateY(-3px);
+  border-color: #358779;
+}
+main .goldBgColor {
+  background-color: #cbab60;
+  color: white;
+  text-align: center;
+}
+main .goldBgColor h6 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+main .goldBgColor p {
+  font-size: 0.9rem;
+}
+main .card .financeLogo {
+  width: 125px;
+  margin-bottom: 0.7rem;
+}
+/*Credits style*/
+main .packages {
+    padding: 1.4rem;
+    margin-bottom: 1.4rem;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 8%);
+}
+main .packages .packagesCredits {
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid #eeeeee;
+    max-width: 320px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    margin-bottom: 4rem;
+}
+main .packages .packagesCredits .packagesCreditsText {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+main .packages .packagesCredits img {
+    width: 30px;
+    margin-right: 0.4rem;
+}
+main .packages .packagesCreditsText h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #4c5157;
+}
+main .packages .creditsHeading h2 {
+    color: #4c5157;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: -0.01rem;
+}
+main .packages .tHeadColor{
+    color: #358779;
+}
+main .settings {
+  padding: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+}
+main .settings .settingsHeading h2 {
+  color: #4c5157;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.01rem;
+}
+main .settings label {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+main .settings .inputBox {
+  color: white;
+  background-color: #17a2b8;
+  padding-top: 0.499rem;
+  padding-bottom: 0.499rem;
+  margin-bottom: 2rem;
+}
+main .settings .formRange {
+  display: flex;
+  align-items: center;
+}
+main .settings .formSwitch {
+  padding-left: 0;
+}
+main .settings .formSwitch .formCheckInput {
+  margin-left: 0;
+  margin-top: 0 !important;
+  width: 4.4rem;
+  height: 34px;
+  border: 1px solid #358779;
+}
+main .settings .formSwitch .formCheckInput:checked {
+  background-color: #358779;
+}
+main .settings .settingBtn {
+  background-color: #358779;
+  color: white;
+  border-color: #358779;
+  letter-spacing: 0.01rem;
+  padding: 0.8rem 1.2rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+main .settings .settingBtn:hover {
+  background-color: #41a393;
+  border-color: #41a393;
+}
+main .settings .rightInput input {
+  color: #358779;
+  padding-top: 0.499rem;
+  padding-bottom: 0.499rem;
+  margin-bottom: 2rem;
+  font-size: 17px;
+}
+/*New*/
+.mijnLeads,-
+.logboek {
+  padding: 1.4rem 1rem 0 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 3px rgb(0 0 0 / 8%);
+}
+.leadsHeading,
+.logboekHeading,
+.logboekText {
+  color: #4c5157;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.01rem;
+}
+.logboekHeading {
+  font-size: 2rem;
+}
+.logboekText {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+.tableHeading {
+  color: #358779;
+}
+.newText {
+  font-size: 0.9rem;
+  border-radius: 25px;
+  color: white;
+  background-color: #d4374c;
+  padding: 0.2rem 0.7rem;
+}
+ .tableBtn {
+  color: white !important;
+  background-color: #358779;
+  width: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.tableBtn:hover {
+  background-color: #4ca597;
+}
+.textColor a {
+  color: #358779;
+  text-decoration: none;
+display: inline-block;
+}
+.modalHeader {
+  border-bottom: 0;
+}
+.modalContent {
+  border: 0;
+}
+.modalTitle {
+  color: #358779;
+  font-size: 1.5rem;
+}
+.modalBodyTopText {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.alertBox {
+  color: white;
+  background-color: #fe7f16;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+.alertBox .faCircleExclamation {
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+.loremBox {
+  background-color: #f9f9f9;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  padding: 1rem;
+}
+.loremBox p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+.loremBox .mb {
+  margin-bottom: 1.2rem;
+}
+.textareaBox {
+  margin-top: 1.8rem;
+}
+.modal .formSwitch {
+  padding-left: 0;
+}
+.modal .formSwitch .formCheckInput:checked {
+  background-color: #358779;
+}
+.modal .formSwitch .formCheckInput {
+  margin-left: 0;
+  margin-top: 0 !important;
+  width: 3.8rem;
+  height: 30px;
+  border: 1px solid #f9f8f6;
+  background-image: url(../img/download.svg);
+  background-color: #cdcdcd;
+}
+.modalBtn {
+  background-color: #358779;
+  color: white !important;
+  padding: 0.575rem 1rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  width: 100%;
+}
+.logboekBtn {
+  background-color: #358779;
+  color: white !important;
+  margin: 2rem 0 1rem 0;
+}
+@media (max-width: 678px) {
+  main {
+    padding-top: 9rem;
+  }
+}
+@media (max-width: 992px) {
+  header nav .navbar-collapse .navbar-nav {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .modalDialog {
+    max-width: 700px;
+  }
+}

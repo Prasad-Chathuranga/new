@@ -1,0 +1,103 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  overflow-x: hidden;
+}
+.login-form {
+  width: 400px;
+}
+.login-form .login-heading {
+  color: rgb(10.1, 255, 245);
+  font-weight: 500;
+}
+.login-form label {
+  margin-top: 0.5em;
+  color: white;
+  font-weight: 600;
+}
+.login-form .form-btn {
+  background-color: #222222;
+  padding: 0.4em 1.8em;
+  color: white;
+  border: none;
+  font-weight: 500;
+  margin-top: 1.3em;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 300ms ease-in-out;
+  text-decoration: none;
+}
+.login-form .form-btn.register {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+.login-form .form-btn:hover {
+  background-color: white;
+  color: #222222;
+}
+.my-form {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.login-form .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #00b068;
+}
+.login-form .form-control {
+  transition: 200ms ease-in-out;
+  color: black;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.login-form .form-control::placeholder {
+  color: black;
+}
+.login-form .form-control:hover {
+  border: 1px solid #00b068;
+}
+.brand {
+  font-size: 3em;
+  color: #00b068;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: 800;
+}
+.brand div {
+  font-size: 0.4em;
+  color: white;
+}
+.oddHeading {
+  font-size: 2em;
+}
+/* Application side */
+.application-side {
+  background-color: #222222;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.application-side img {
+  height: 150px;
+}
+@media (max-width: 768px) {
+  .my-form {
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+  }
+}
+.my-form {
+  background-image: url("../img/bgl.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-left: 4em;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+}

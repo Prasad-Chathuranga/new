@@ -1,0 +1,177 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  font-size: 1em;
+}
+.lightText {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: black;
+}
+.boldText {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: black;
+}
+.ledgerHeader {
+  padding: 2em 0;
+}
+.mainHeading {
+  font-size: 2.2em;
+  color: black;
+  font-weight: 700;
+  margin-top: 1em;
+}
+.details .col-lg-4 .boldText {
+  width: 100%;
+  max-width: 70px;
+  display: inline-block;
+}
+.midDetails {
+  padding: 3em 0;
+}
+.midDetails .midDet {
+  margin-bottom: 0.4em;
+}
+.midDetails .midDet:last-child {
+  margin-bottom: 0;
+}
+.midDetails .detailsCard {
+  background-color: #eee;
+  padding: 2em 1.5em;
+  border: 1px solid #00000020;
+  position: relative;
+}
+.midDetails .detailsCard .lightText {
+  width: 100%;
+  max-width: 150px;
+  display: inline-block;
+}
+.midDetails .detailsCard .cardTag {
+  background-color: white;
+  border: 1px solid #00000020;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: black;
+  display: inline-block;
+  padding: 0.1em 0.8em;
+  position: absolute;
+  left: 10px;
+  top: -15px;
+}
+.midDetails .lightText.odd {
+  width: 100%;
+  max-width: 150px;
+  display: inline-block;
+  margin-bottom: 0.3em;
+}
+.tableDetails .table thead th {
+  border: none;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: black;
+}
+.tableDetails .table thead {
+  background-color: #eee;
+}
+.tableDetails .table tbody td {
+  border: none;
+  font-size: 1.2em;
+  color: black;
+}
+.multiTables {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+.multiTables .container {
+  background-color: #eee;
+}
+.multiTables .table thead th {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: black;
+  border-top: none;
+  border-bottom: 1px solid black;
+}
+.multiTables .table tbody td {
+  border-top: none;
+  font-size: 1.2em;
+  color: black;
+  padding: 0.1em 0.6em;
+}
+.multiTables .table tfoot td {
+  border-top: 1px solid black;
+  font-size: 1.2em;
+  color: black;
+  padding: 0.1em 0.6em;
+  font-weight: 700;
+}
+/* Media Query */
+@media (max-width: 992px) {
+  .ledgerHeader {
+    padding: 3em 0 2em 0;
+  }
+  .mainHeading {
+    margin-top: 1em;
+    font-size: 1.8em;
+  }
+  .boldText,
+  .tableDetails .table thead th,
+  .lightText,
+  .tableDetails .table tbody td,
+  .multiTables .table thead th,
+  .multiTables .table tbody td,
+  .multiTables .table tfoot td {
+    font-size: 1em;
+  }
+  .midDetails .detailsCard .lightText {
+    max-width: 100px;
+  }
+}
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+  /*div.page-break-after {
+    display: block !important;
+    page-break-after: always;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }*/
+}
+
+@media print {
+  .row {
+    flex-wrap: nowrap !important;
+  }
+  .col-lg-2.hideCol {
+    display: none;
+  }
+  .boldText {
+    font-size: 1em;
+  }
+  .rightCol {
+    text-align: right;
+  }
+  .multiTables {
+    margin-top: 10em;
+  }
+  table thead th:last-child {
+    text-align: right !important;
+  }
+  table tbody td:last-child {
+    text-align: right !important;
+  }
+  table tfoot td:last-child {
+    text-align: right !important;
+  }
+  .ledgerHeader {
+    padding: 1em 0;
+  }
+  .midDetails .midDet,
+  .midDetails .lightText.odd {
+    margin-bottom: 0.2em;
+  }
+}
