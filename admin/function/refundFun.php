@@ -63,7 +63,15 @@
                 $redesc=mysqli_real_escape_string($conn,$_POST["reason"]);
                 $adid=$_SESSION["id"];
 
-              
+           
+
+                $buy_details = "SELECT bid FROM refund WHERE rid = '$rid'";
+                $buy_details_query= mysqli_query($conn,$buy_details);
+                $buy_details_results = mysqli_fetch_array($buy_details_query);
+                $bid = $buy_details_results["bid"];
+                $update_bsts="UPDATE `buy` SET bSts = 0 WHERE bid='$bid'";
+                $bsts= mysqli_query($conn,$update_bsts);
+
 
                 // echo "<script>alert('$rid,$credit,$aid,$sts,$redesc');</script>";
                 $query="SELECT * FROM `total_credits` WHERE Aid='$aid'";
@@ -72,8 +80,8 @@
                 $remain= $row["tcr_amount"]+$credit;
 
                 $refund = "UPDATE refund SET `RSts`='$sts', `admindesc`='$redesc',`amId`='$adid' WHERE Rid='$rid'";
-                $select = "SELECT bid FROM `buy` WHERE "
-                $query="UPDATE `buy` SET bts = 0 WHERE Aid='$aid' AND WHERE Jid = $";
+                // $select = "SELECT bid FROM `buy` WHERE "
+                // $query="UPDATE `buy` SET bts = 0 WHERE Aid='$aid' AND WHERE Jid = $";
                 $totcred="UPDATE `total_credits` SET `tcr_amount`='$remain' WHERE Aid='$aid'";
                 if($sts==1){
                         if (mysqli_query($conn,$refund) AND mysqli_query($conn,$totcred)) {

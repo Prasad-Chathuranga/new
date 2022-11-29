@@ -236,7 +236,7 @@
                    Left JOIN job ON buy.Jid=job.Jid 
                    left join city on city.id=job.Jcity
                    WHERE buy.Aid= '$id'
-                   WHERE buy.bSts=1
+                   AND buy.bSts=1
                    order by buy.buydate desc";
                    
                    $run = mysqli_query($conn,$query);

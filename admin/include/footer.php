@@ -4,7 +4,6 @@
 <script type="text/javascript" src="Editor/jquery-te-1.4.0.min.js" charset="utf-8"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/2.3.2/js/dataTables.buttons.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
 <script src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.html5.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.print.min.js"></script>
@@ -21,7 +20,8 @@
                                 buttons: [
 
 
-                                        'excel'
+                                        {extend:'csv', text: 'Export to Excel'}
+
 
                                 ],
                                 order: [
@@ -44,7 +44,8 @@
                                 buttons: [
 
 
-                                        'excel'
+                                        {extend:'csv', text: 'Export to Excel'}
+
 
                                 ],
                                 order: [
@@ -66,7 +67,8 @@
                                 buttons: [
 
 
-                                        'excel'
+                                        {extend:'csv', text: 'Export to Excel'}
+
 
                                 ],
                                 order: [
@@ -89,7 +91,8 @@
                                 buttons: [
 
 
-                                        'excel'
+                                        {extend:'csv', text: 'Export to Excel'}
+
 
                                 ],
                                 order: [
@@ -111,11 +114,7 @@
                                 buttons: [
 
 
-                                        {
-                                                extends: 'csv',
-                                                text: 'Export to Excel'
-                                        }
-
+                                        {extend:'csv', text: 'Export to Excel'}
                                 ],
                                 order: [
                                         [0, 'desc']
@@ -136,7 +135,8 @@
                                 buttons: [
 
 
-                                        'excel'
+                                        {extend:'csv', text: 'Export to Excel'}
+
 
                                 ],
                                 order: [
@@ -158,7 +158,8 @@
                                 buttons: [
 
 
-                                        'excel'
+                                        {extend:'csv', text: 'Export to Excel'}
+
 
                                 ],
                                 initComplete: function() {
