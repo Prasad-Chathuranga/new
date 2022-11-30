@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '2a45b09e8cf2c46b29676fb0db05c32d62cb4984',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '2a45b09e8cf2c46b29676fb0db05c32d62cb4984',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'php-flasher/flasher' => array(
+            'pretty_version' => 'v1.8.1',
+            'version' => '1.8.1.0',
+            'reference' => 'e9d692bbedc29eca11590383092f9dd0dd76beeb',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-flasher/flasher',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'php-flasher/flasher-sweetalert' => array(
+            'pretty_version' => 'v1.8.1',
+            'version' => '1.8.1.0',
+            'reference' => '0a3fd6b53ba1f46e1fcd1d7cd71e87128babc725',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-flasher/flasher-sweetalert',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

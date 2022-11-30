@@ -1,5 +1,12 @@
 <?php 
+use Flasher\SweetAlert\Prime\SweetAlertFactory;
+
         include('connection.php');
+        include('./vendor/autoload.php');
+        // include('./vendor/php-flasher/flasher-sweetalert/SweetAlertFactory.php');
+        require './vendor/php-flasher/flasher-sweetalert/SweetAlertFactory.php';
+
+       
         
         // setcookie('lang','de', time() + (10 * 365 * 24 * 60 * 60),'/');
         //////////////////////// insert company type  //////////////////////////////////
@@ -61,7 +68,14 @@
                         /*echo "<script> 
                                 alert('Your Job have been Submitted.');
                         </script>";*/
-                        echo "<meta http-equiv='refresh' content='0;thankyou.php'>" ;
+                        // echo "<meta http-equiv='refresh' content='0;thankyou.php'>" ;
+                        // $flasher = new SweetAlertFactorySweetAlertFactory();
+                        $flasher = new SweetAlertFactory();
+                     
+                        $flasher->createNotificationBuilder();
+                        $flasher->addSuccess('Your Job have been submitted');
+                        // $flasher->addSuccess('Your Job have been submitted');
+                          
                 }
                 else {
                         // echo "<script> alert('Error. Data not Saved')</script>";

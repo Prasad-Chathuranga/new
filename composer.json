@@ -1,0 +1,5 @@
+{
+    "require": {
+        "php-flasher/flasher-sweetalert": "^1.8"
+    }
+}
